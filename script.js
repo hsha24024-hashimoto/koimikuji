@@ -7,8 +7,10 @@ const fortunes =[
     "凶　無理せず慎重に行動しよう",
 ];
 const button = document.getElementById("omikuji-bt");
+const omikujiImg = document.getElementById("omikuji=img");
 const result = document.getElementById("result");
-
+const advice = document.getElementById("advice");
+omikujiImg.innerHTML = "<img src='happy.png'>";
 button.addEventListener("click",function () {
 
 
@@ -19,8 +21,9 @@ result.textContent = fortunes[(randomNumber)];
 
 if (resultText.includes("大吉")) {
      result.style.color = "red";
+     advice.textContent="今日は積極的に行動しよう"
 }else if(resultText.includes("中吉")) {
      result.style.color = "green" ;
 }else {
-  (result .style.color = "black")
+  result .style.color = "black";
 }});
