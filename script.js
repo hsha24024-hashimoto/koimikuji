@@ -26,4 +26,5 @@ if (resultText.includes("大吉")) {
      result.style.color = "green" ;
 }else {
   result .style.color = "black";
-}});
+}
+});
